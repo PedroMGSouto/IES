@@ -28,9 +28,24 @@ public class WeatherStarter {
     public static void  main(String[] args ) {
         int cityCode = CITY_ID_AVEIRO;
 
+        HashMap<String, Integer> cidades = new HashMap<String, Integer>();
+        cidades.put("Aveiro", 1010500);
+        cidades.put("Beja", 1020500);
+        cidades.put("Braga", 1030300);
+        cidades.put("Lisboa", 1110600);
+        cidades.put("Faro", 1080500);
+        cidades.put("Porto", 1131200);
+
         try {
             cityCode = Integer.parseInt(args[0]);
         }catch(Exception ex){
+            try {
+                if(cidades.keySet().contains(args[0])){
+                    cityCode = cidades.get(args[0]);
+                }
+            }catch(Exception e){
+
+            }
         }
 
         /*
