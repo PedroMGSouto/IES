@@ -7,8 +7,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import weather.ipma_client.IpmaCityForecast;
 import weather.ipma_client.IpmaService;
 
-import java.util.logging.Logger;
-
+//import java.util.logging.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 /**
  * demonstrates the use of the IPMA API for weather forecast
  */
@@ -20,7 +21,9 @@ public class WeatherStarter {
     loggers provide a better alternative to System.out.println
     https://rules.sonarsource.com/java/tag/bad-practice/RSPEC-106
      */
-    private static final Logger logger = Logger.getLogger(WeatherStarter.class.getName());
+
+    //private static final Logger logger = Logger.getLogger(WeatherStarter.class.getName());
+    private static final Logger logger = LogManager.getLogger(WeatherStarter.class.getName());
 
     public static void  main(String[] args ) {
         int cityCode = CITY_ID_AVEIRO;
