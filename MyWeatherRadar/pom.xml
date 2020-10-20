@@ -35,6 +35,16 @@
       <artifactId>converter-gson</artifactId>
       <version>2.9.0</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.6.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.6.1</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -95,5 +105,16 @@
       </roles>
       <timezone>+1</timezone>
     </developer>
+    <developer>
+        <id>93321</id>
+        <name>Luís Pereira</name>
+        <email>luis.pinto.pereira@ua.pt</email>
+        <organization>UA</organization>
+        <organizationUrl>http://www.ua.pt</organizationUrl>
+        <roles>
+          <role>Developer</role>
+        </roles>
+        <timezone>+1</timezone>
+      </developer>
   </developers>
 </project>
