@@ -1,0 +1,4 @@
+ies\weather\WeatherStarter.class
+weather\ipma_client\IpmaCityForecast.class
+weather\ipma_client\IpmaService.class
+weather\ipma_client\CityForecast.class
